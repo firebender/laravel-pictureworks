@@ -31,6 +31,27 @@
             </tr>
         @endforeach
         </table>
+        <br>
+
+
+        <table>
+        <tr>
+            @if ($users->currentPage() == 1)
+                <td>Previous</td>
+            @else
+                <td><a href="{{ route('list-users', ['page' => $users->currentPage() - 1]) }}">Previous</td>
+            @endif
+
+            @if ($users->hasMorePages())
+                <td><a href="{{ route('list-users', ['page' => $users->currentPage() + 1]) }}">Next</td>
+            @else
+                <td>Next</td>
+            @endif
+
+        </tr>
+        </table>
+
+
     @endif
 
     @include('users::footer')
