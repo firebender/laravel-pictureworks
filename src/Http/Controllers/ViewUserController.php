@@ -17,7 +17,13 @@ class ViewUserController extends Controller
     {
         $user = $service->getUserById($id);
 
-        $data = ['id' => $id, 'user' => $user];
+        $success = request()->session()->pull('success', null);
+        $message = null;
+        if (is_array($success)) $message = $success[0];
+
+        $data = ['id' => $id, 'user' => $user, 'success' => $message];
+
+        // dumper()->dump(request()->session());
 
         return view('users::view-user', $data);
     }
