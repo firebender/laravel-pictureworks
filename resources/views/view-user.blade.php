@@ -24,7 +24,7 @@
             <header>
                 <span class="avatar"><img src="images/users/<?=$user->id?>.jpg" alt="" /></span>
 
-                <h1>{{ $user->name }}</h1>
+                <h1>{{ $user->id }} {{ $user->name }}</h1>
 
                 @if ($success !== null)
                     <p>Success {!! $success !!}</p>
