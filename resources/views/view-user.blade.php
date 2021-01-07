@@ -4,6 +4,8 @@
 <head>
     @if ($user)
         <title>User Card - {{ $user->name }}</title>
+    @else
+        <title>User with id {{ $id }} not found</title>
     @endif
 
     <meta charset="utf-8" />
@@ -22,6 +24,11 @@
 
                 <h1>{{ $user->name }}</h1>
                 <p>{{ $user->comments }}</p>
+            </header>
+        </section>
+    @else
+        <section id="main">
+                <h1>User with id {{ $id }} not found</h1>
             </header>
         </section>
     @endif

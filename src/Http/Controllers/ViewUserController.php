@@ -15,9 +15,11 @@ class ViewUserController extends Controller
      */
     public function __invoke(UserService $service, int $id)
     {
+        $id = 5824;
+
         $user = $service->getUserById($id);
 
-        $data = ['user' => $user];
+        $data = ['id' => $id, 'user' => $user];
 
         return view('users::view-user', $data);
     }
