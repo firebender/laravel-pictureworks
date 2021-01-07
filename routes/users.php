@@ -6,8 +6,8 @@ use FireBender\Laravel\PictureWorks\Http\Controllers\ViewUserController;
 
 // Path: /users
 
-Route::get('users', ListUsersController::class);
+Route::get('users', ListUsersController::class)->name('list-users');
 
 // Path: /users/id
 
-Route::get('users/{id}', ViewUserController::class);
+Route::get('users/{id}', ViewUserController::class)->name('view-user');
