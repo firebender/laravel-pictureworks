@@ -50,6 +50,14 @@
                     <td><textarea name="comments" rows="5" cols="50">{{ $user->comments }}</textarea></td>
                 </tr>
                 <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="text" name="password">
+                        <br>
+                        720DF6C2482218518FA20FDC52D4DED7ECC043AB
+                    </td>
+                </tr>
+                <tr>
                     <td>&#160;</td>
                     <td><input type="submit" value="Modify"></td>
                 </tr>
