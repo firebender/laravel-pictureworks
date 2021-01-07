@@ -22,12 +22,14 @@
             <td>ID</td>
             <td>Name</td>
             <td>Comments</td>
+            <td>&#160;</td>
         </tr>
         @foreach ($users as $user)
             <tr>
                 <td>{{ $user->id }}</td>
                 <td><a href="{{ route('view-user', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
                 <td>{{ $user->comments }}</td>
+                <td><a href="{{ route('edit-user', ['id' => $user->id]) }}">Edit</a></td>
             </tr>
         @endforeach
         </table>
