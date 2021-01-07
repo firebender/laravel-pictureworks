@@ -13,6 +13,9 @@
         "orchestra/testbench": "^6.7"
     },
     "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
         "psr-4": {
             "FireBender\\Laravel\\PictureWorks\\": "src/",
             "FireBender\\Laravel\\PictureWorks\\Database\\Factories\\": "database/factories/",
