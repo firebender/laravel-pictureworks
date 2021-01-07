@@ -11,14 +11,28 @@
 <body class="is-preload">
 
 <div id="wrapper">
-    <section id="main">
-        <header>
-            <span class="avatar"><img src="images/users/<$user->id>.jpg" alt="" /></span>
-            <h1><user->name></h1>
-            <p><nl2br(user->comments)</p>
-        </header>
-    </section>
-    
+
+    @if ($users->count() == 0)
+        <h1>No users found</h1>
+    @else
+        <h1>Users</h1>
+
+        <table>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Comments</td>
+        </tr>
+        @foreach ($users as $user)
+            <tr>
+                <td>{{ $user->id }}</td>
+                <td><a href="{{ route('view-user', ['id' => $user->id]) }}">{{ $user->name }}</a></td>
+                <td>{{ $user->comments }}</td>
+            </tr>
+        @endforeach
+        </table>
+    @endif
+
     @include('users::footer')
 
 </div>
