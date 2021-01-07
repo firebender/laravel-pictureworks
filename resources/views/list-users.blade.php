@@ -18,11 +18,8 @@
             <p><nl2br(user->comments)</p>
         </header>
     </section>
-    <footer id="footer">
-        <ul class="copyright">
-            <li>&copy; Pictureworks</li>
-        </ul>
-    </footer>
+    
+    @include('users::footer')
 
 </div>
 
