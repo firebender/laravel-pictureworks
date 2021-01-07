@@ -10,6 +10,7 @@ use FireBender\Laravel\PictureWorks\Console\Commands\ModifyUserCommand;
 use FireBender\Laravel\PictureWorks\Console\Commands\GetUsersCommand;
 use FireBender\Laravel\PictureWorks\Console\Commands\SeedUsersCommand;
 use FireBender\Laravel\PictureWorks\Console\Commands\ModifyCommentsCommand;
+use FireBender\Laravel\PictureWorks\Console\Commands\JsonHelperCommand;
 
 class PackageServiceProvider extends ServiceProvider
 
@@ -32,6 +33,7 @@ class PackageServiceProvider extends ServiceProvider
                 GetUsersCommand::class,
                 SeedUsersCommand::class,
                 ModifyCommentsCommand::class,
+                JsonHelperCommand::class,
             ]);
         }
 
