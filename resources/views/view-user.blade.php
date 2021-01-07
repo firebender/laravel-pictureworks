@@ -25,7 +25,14 @@
                 <span class="avatar"><img src="images/users/<?=$user->id?>.jpg" alt="" /></span>
 
                 <h1>{{ $user->name }}</h1>
+
+                @if ($success !== null)
+                    <p>Success {!! $success !!}</p>
+                @endif
+
                 <p>{{ $user->comments }}</p>
+
+                <p><a href="{{ route('edit-user', ['id' => $user->id]) }}">Modify</p>
             </header>
         </section>
     @else
