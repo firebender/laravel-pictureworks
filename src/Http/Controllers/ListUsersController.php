@@ -13,9 +13,9 @@ class ListUsersController extends Controller
      * @param FireBender\Laravel\PictureWorks\Services\UserService $service
      * @return \Illuminate\View\View
      */
-    public function __invoke(UserService $service)
+    public function __invoke(UserService $service, int $page = 1)
     {
-        $users = $service->getPagedUsers();
+        $users = $service->getPagedUsers($page);
 
         $data = ['users' => $users];
 
