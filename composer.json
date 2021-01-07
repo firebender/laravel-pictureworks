@@ -1,0 +1,11 @@
+{
+    "name": "firebender/laravel-pictureworks",
+    "description": "Pictureworks legacy test Laravel package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Arabia",
+            "email": "firebender.me@gmail.com"
+        }
+    ]
+}
