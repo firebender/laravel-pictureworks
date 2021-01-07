@@ -1,5 +1,5 @@
     <footer id="footer">
         <ul class="copyright">
-            <li>&copy; Pictureworks</li>
+            <li>&copy; <a href="https://pictureworks.com.au/">Pictureworks</a></li>
         </ul>
     </footer>
