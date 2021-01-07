@@ -12,6 +12,25 @@
         "firebender/laravel-dumper": "dev-master",
         "orchestra/testbench": "^6.7"
     },
+    "autoload": {
+        "psr-4": {
+            "FireBender\\Laravel\\PictureWorks\\": "src/",
+            "FireBender\\Laravel\\PictureWorks\\Database\\Factories\\": "database/factories/",
+            "FireBender\\Laravel\\PictureWorks\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FireBender\\Laravel\\PictureWorks\\Tests\\": "tests/"
+        }
+    },    
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FireBender\\Laravel\\PictureWorks\\Providers\\PackageServiceProvider"
+            ]
+        }
+    },
     "repositories": [
         {
             "type": "path",
