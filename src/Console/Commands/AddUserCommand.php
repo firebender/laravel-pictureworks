@@ -12,14 +12,14 @@ class AddUserCommand extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'user:add';
+    protected $signature = 'z:user:add';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Adds a user';
+    protected $description = 'Adds a user. Interactive';
 
     /**
      * The UserService

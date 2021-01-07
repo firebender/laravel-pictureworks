@@ -12,7 +12,7 @@ class ModifyUserCommand extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'user:modify 
+    protected $signature = 'z:user:modify 
                             {id : The ID of the user record to modify}
                             {--name= : New data for name field}
                             {--comments= : New data for the comments field}';

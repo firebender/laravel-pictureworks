@@ -14,7 +14,7 @@ class SeedUsersCommand extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'users:seed {count : Count of entries to create}';
+    protected $signature = 'z:seed {count : Count of entries to create}';
 
     /**
      * The console command description.
