@@ -14,7 +14,10 @@ class GetUsersCommand extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'users:get {--page=} {--per-page=} {--seed=}';
+    protected $signature = 'users:get 
+                            {--page= : Page to retrieve from the query} 
+                            {--per-page= : Number of entries per page} 
+                            {--seed= : Count of entries for seeding}';
 
     /**
      * The console command description.

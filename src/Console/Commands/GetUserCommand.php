@@ -13,7 +13,7 @@ class GetUserCommand extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'user:get {id}';
+    protected $signature = 'user:get {id : The ID of the user}';
 
     /**
      * The console command description.
