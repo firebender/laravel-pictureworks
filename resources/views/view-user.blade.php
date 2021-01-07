@@ -17,6 +17,8 @@
 <body class="is-preload">
 
 <div id="wrapper">
+    <p><a href="{{ route('list-users') }}">List Users</a></p>
+
     @if ($user)
         <section id="main">
             <header>
