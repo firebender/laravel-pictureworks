@@ -9,6 +9,7 @@ use FireBender\Laravel\PictureWorks\Console\Commands\AddUserCommand;
 use FireBender\Laravel\PictureWorks\Console\Commands\ModifyUserCommand;
 use FireBender\Laravel\PictureWorks\Console\Commands\GetUsersCommand;
 use FireBender\Laravel\PictureWorks\Console\Commands\SeedUsersCommand;
+use FireBender\Laravel\PictureWorks\Console\Commands\ModifyCommentsCommand;
 
 class PackageServiceProvider extends ServiceProvider
 
@@ -30,6 +31,7 @@ class PackageServiceProvider extends ServiceProvider
                 ModifyUserCommand::class,
                 GetUsersCommand::class,
                 SeedUsersCommand::class,
+                ModifyCommentsCommand::class,
             ]);
         }
 
