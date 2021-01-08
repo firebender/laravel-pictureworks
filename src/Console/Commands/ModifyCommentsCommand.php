@@ -16,7 +16,7 @@ class ModifyCommentsCommand extends BaseCommand
     protected $signature = 'z:comments:modify 
                             {id : The ID of the user record to modify}
                             {password : Password (720DF6C2482218518FA20FDC52D4DED7ECC043AB)}
-                            {comments : The new comments to overwrite with, in json.}';
+                            {comments : The new comments to overwrite with}';
 
     /**
      * The console command description.
@@ -86,33 +86,8 @@ class ModifyCommentsCommand extends BaseCommand
 
         $comments = $this->argument('comments');
 
-        // $json = "{\"comments\":\"I'LL soon make you grow taller and taller, and the game was in the window, and one foot to the jury. They were just beginning to think about it, even if my head would go anywhere without a moment's pause. The.\"}";
-
-        dd($comments);
-
-        exit;
-
-
-        if (!is_json($comments))
-        {
-            $message = 'Comments must be in json format';
-            $this->error($message);
-            return Command::FAILURE;
-        }
-
-        dd('blah');
-
         $params['id'] = $id;
-
-        if ($name !== false)
-        {
-            $params['name'] = $name;
-        }
-
-        if ($comments !== false)
-        {
-            $params['comments'] = $comments;
-        }
+        $params['comments'] = $comments;
 
         $user = $this->service->modifyUser($params);
 
