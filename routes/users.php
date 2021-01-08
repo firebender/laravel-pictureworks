@@ -5,6 +5,7 @@ use FireBender\Laravel\PictureWorks\Http\Controllers\ListUsersController;
 use FireBender\Laravel\PictureWorks\Http\Controllers\ViewUserController;
 use FireBender\Laravel\PictureWorks\Http\Controllers\EditUserController;
 use FireBender\Laravel\PictureWorks\Http\Controllers\ModifyUserController;
+use FireBender\Laravel\PictureWorks\Http\Middleware\CheckPassword;
 
 // Path: /users
 
@@ -20,4 +21,4 @@ Route::get('user/edit/{id}', EditUserController::class)->name('edit-user')->midd
 
 // Path: /user/modify
 
-Route::post('user/modify', ModifyUserController::class)->name('modify-user')->middleware('web');
+Route::post('user/modify', ModifyUserController::class)->name('modify-user')->middleware(['web', CheckPassword::class]);
