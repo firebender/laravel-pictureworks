@@ -16,7 +16,7 @@ Source legacy files in ./legacy.
 
 2. Ideally, this package should be in its own Composer package repository. If you want to keep your packages private, you can use packagist.com. But because this particular package wouldn't be useful for the general public anyway, we can set things up locally.
 
-Clone the package repo.
+    Clone the package repo.
 
     git clone https://
 
