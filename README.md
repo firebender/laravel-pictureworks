@@ -6,7 +6,7 @@ Laravel PictureWorks package
 
 Very simple legacy work. Wrapped in a neat Laravel ready package.
 
-Source legacy files in ./legacy.
+Source legacy files in /legacy.
 
 ### How do I get set up? ###
 
@@ -27,10 +27,11 @@ Source legacy files in ./legacy.
 4. In your <your_website> composer.json, add the following:
 
         "repositories": [
-        {
-            "type": "path",
-            "url": "<path_to_this_package>"
-        }
+            {
+                "type": "path",
+                "url": "<path_to_this_package>"
+            }
+        ]
 
 5. Pull the package into your Laravel app.
 
@@ -46,11 +47,15 @@ Source legacy files in ./legacy.
 
         artisan migrate
 
-8. Optional. Seed the database with either:
+8. Optional. Seed the database either:
 
-    a) artisan db:seed --class=FireBender\\Laravel\\PictureWorks\\Database\\Seeders\\UserSeeder
+    This way:
 
-    b) artisan users:seed N // where N is the number of records you wish to seed
+        artisan db:seed --class=FireBender\\Laravel\\PictureWorks\\Database\\Seeders\\UserSeeder
+
+    Or this way:
+
+        artisan z:seed N // where N is the number of records you wish to seed
 
 9. Check that the web middleware group is availabe in your middleware groups in your App/Http/Kernel.php file. In particular, ensure that the following middleware classes are activated:
 
@@ -102,6 +107,10 @@ Modifies comments on a user entry
 ### Contribution guidelines ###
 
 Write tests. Write code. Pull request. 
+
+Everybody happy? We celebrate. We drink :)
+
+Problems? We talk. We still drink :D
 
 ### Who do I talk to? ###
 
