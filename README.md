@@ -12,7 +12,7 @@ Source legacy files in ./legacy.
 
 1. Set up your Laravel website.
 
-    laravel new <your_website>
+    `laravel new <your_website>`
 
 2. Ideally, this package should be in its own Composer package repository. If you want to keep your packages private, you can use packagist.com. But because this particular package wouldn't be useful for the general public anyway, we can set things up locally.
 
