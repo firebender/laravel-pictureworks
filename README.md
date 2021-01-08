@@ -18,13 +18,13 @@ Source legacy files in /legacy.
 
     Clone the package repo.
 
-        git clone https://
+        git clone https://github.com:firebender/laravel-pictureworks.git
 
 3. cd into laravel-pictureworks, then run
 
         composer install
 
-4. In your <your_website> composer.json, add the following:
+4. In the new Laravel website's composer.json, add the following:
 
         "repositories": [
             {
@@ -47,7 +47,7 @@ Source legacy files in /legacy.
 
         artisan migrate
 
-8. Optional. Seed the database either:
+8. Optional. Seed the database with either:
 
     This way:
 
