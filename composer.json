@@ -30,11 +30,5 @@
                 "FireBender\\Laravel\\PictureWorks\\Providers\\PackageServiceProvider"
             ]
         }
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../../packages/laravel-dumper/app1"
-        }
-    ]
+    }
 }
