@@ -106,11 +106,7 @@ Modifies comments on a user entry
 
 ### Contribution guidelines ###
 
-Write tests. Write code. Pull request. 
-
-Everybody happy? We celebrate. We drink :)
-
-Problems? We talk. We still drink :D
+Write tests. Write code. Make a pull request. 
 
 ### Who do I talk to? ###
 
